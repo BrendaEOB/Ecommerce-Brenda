@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+        <header class="header">
+                 <div class="logo"><img src="imagens/Vector.png" alt="logo Rv">
+                </div>
+
+                <nav class="menu">
+                    <a href="index.html" class="inicio">
+                        <img src="imagens/casinha.png" alt="Home">
+                        Início</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="#">Cadastro</a>
+                    <a href="pedidos.html">Pedidos</a>  
+                    <a href="quemSomos.html">Quem Somos</a>
+
+                </nav>
+
+                <div class="acoes">
+                    <form class="busca" action="#" method="get"> 
+                        <input type="text" 
+                        name="q"
+                        placeholder="Buscar produtos...">
+                        <a href="resultadoBusca.html" class="botao-pesquisa">
+                            <img src="imagens/lupa.png" alt="Pesquisar">
+                        </a>
+                    </form> 
+                    <a href="pedidos.html" class="btn-carrinho">
+                    <img src="imagens/Shopping cart.png" alt="carrinho">
+                   </a>
+                    <div class="hamburguer">☰</div>
+                </div>
+
+        </header>
+        <section class="pagina-cadastro">
+
+    <div class="lado-cadastro">
+
+        <p class="boas-vindas">Bem - vinda a<br>ReVogue</p>
+
+        <h1>Crie sua conta</h1>
+
+        <p class="texto-cadastro">
+            Cadastre-se para comprar peças de luxo second hand com<br>
+            segurança e exclusividade.
+        </p>
+
+        <div class="beneficios-cadastro">
+
+            <div class="beneficio-cadastro">
+                <img src="imagens/Mail.png" alt="Ícone">
+                <div>
+                    <h3>Ofertas exclusivas</h3>
+                    <p>Receba novidades antes de todo mundo.</p>
+                </div>
+            </div>
+
+            <div class="beneficio-cadastro">
+                <img src="imagens/Heart.png" alt="Ícone">
+                <div>
+                    <h3>Favoritos salvos</h3>
+                    <p>Salve as peças que mais gostar.</p>
+                </div>
+            </div>
+
+            <div class="beneficio-cadastro">
+                <img src="imagens/Shield.png" alt="Ícone">
+                <div>
+                    <h3>Ambiente seguro</h3>
+                    <p>Compra protegida do início ao fim.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="area-formulario-cadastro">
+
+        <div class="formulario-cadastro">
+
+            <h2>Dados Pessoais</h2>
+
+            <form>
+
+                <div class="linha-form">
+                    <div class="campo">
+                        <label>Nome Completo</label>
+                        <input type="text" placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="campo">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="Digite seu e-mail">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>Telefone / Whatsapp</label>
+                    <input type="text" placeholder="(00) 00000-0000">
+                </div>
+
+                <h2>Endereço</h2>
+
+                <div class="linha-form">
+                    <div class="campo">
+                        <label>CEP</label>
+                        <input type="text" placeholder="00000-000">
+                    </div>
+
+                    <div class="campo pequeno">
+                        <label>&nbsp;</label>
+                        <button type="button">Buscar CEP</button>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label>Endereço</label>
+                    <input type="text" placeholder="Digite seu endereço">
+                </div>
+
+                <div class="linha-form">
+                    <div class="campo">
+                        <label>Número</label>
+                        <input type="text" placeholder="Nº">
+                    </div>
+
+                    <div class="campo">
+                        <label>Complemento</label>
+                        <input type="text" placeholder="Casa, apto ou referência">
+                    </div>
+                </div>
+
+                <div class="linha-form">
+                    <div class="campo">
+                        <label>Cidade</label>
+                        <input type="text" placeholder="Digite sua cidade">
+                    </div>
+
+                    <div class="campo">
+                        <label>Estado</label>
+                        <select>
+                            <option>Selecione seu estado</option>
+                            <option>MG</option>
+                            <option>SP</option>
+                            <option>RJ</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>Segurança</h2>
+
+                <div class="campo">
+                    <label>Senha</label>
+                    <input type="password" placeholder="Crie uma senha">
+                </div>
+
+                <div class="campo">
+                    <label>Confirmar senha</label>
+                    <input type="password" placeholder="Confirme sua senha">
+                </div>
+
+                <label class="termos">
+                    <input type="checkbox">
+                    <span>Li e concordo com os termos de uso e política de privacidade.</span>
+                </label>
+
+                <button class="botao-criar" type="submit">Criar conta</button>
+
+                <p class="login">
+                    Já tem uma conta? <a href="#">Entrar</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+         <footer class="rodape">
+
+        <div class="footer-container">
+
+                <!-- LOGO -->
+                    <div class="footer-logo">
+
+                        <img src="imagens/Vector.png" alt="Logo RV" class="logo-rv">
+                         <p>
+                            PEÇAS AUTÊNTICAS DAS MARCAS MAIS DESEJADAS,
+                            COMPRADAS DE FORMA EXCLUSIVA E COM UM
+                            CONSUMO CONSCIENTE.
+                        </p>
+                        <div class="redes-sociais">
+                            <a href="#">
+                                <img src="imagens/Instagram.png" alt="Instagram">
+                            </a>
+                            <a href="#">
+                                <img src="imagens/Group 10.png" alt="Facebook">
+                            </a>
+                            <a href="#">
+                                <img src="imagens/Group 9.png" alt="YouTube">
+                            </a>
+                        </div> 
+                    </div>
+        
+                <!-- INSTITUCIONAL -->
+                    <div class="footer-coluna">
+                        <h3>INSTITUCIONAL</h3>
+                        <a href="quemSomos.html">Quem Somos</a>
+                        <a href="#">Nossa Curadoria</a>
+                        <a href="#">Sustentabilidade</a>
+                        <a href="#">Perguntas Frequentes</a>
+                    </div>
+                <!-- AJUDA -->
+                    <div class="footer-coluna">
+                        <h3>AJUDA</h3>
+                        <a href="#">Como Comprar</a>
+                        <a href="#">Formas de Pagamento</a>
+                        <a href="#">Trocas e Devoluções</a>
+                        <a href="#">Política de Privacidade</a>
+                    </div>
+                <!-- ATENDIMENTO -->
+                    <div class="footer-coluna">
+                        <h3>ATENDIMENTO</h3>
+                        <a href="contato.html">Contato</a>
+                        <a href="#">Central de Ajuda</a>
+                        <div class="contato">
+    
+                            <div class="contato-item">
+                             <img src="imagens/Phone.png" alt="Telefone">
+                                <span>(11) 99999-9999</span>
+                            </div>
+                            <div class="contato-item">
+                                <img src="imagens/mark_email_unread.png" alt="E-mail">
+                                <span>contato@rv.com.br</span>
+                            </div>    
+                        </div>
+                    </div>    
+          
+                     <!-- NEWSLETTER -->
+                        <div class="footer-newsletter">
+                         <h3>NEWSLETTER</h3>
+                            <p>
+                             Receba novidades e ofertas exclusivas.
+                             </p>
+                            <input type="email" placeholder="Digite seu e-mail">
+                             <button>Inscrever-se</button>
+                        </div>
+        </div>
+        </footer>
+</body>
+</html>

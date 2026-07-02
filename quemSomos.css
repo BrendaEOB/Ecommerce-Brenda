@@ -1,0 +1,448 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  width: 100%;
+
+  padding: 2vh 4%;
+  box-sizing: border-box;
+  background-color: #f4f5ee;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  font-size: 60px;
+  color: #2f5f3a;
+  font-family: serif;
+}
+.logo img {
+    width: 70%;
+    max-width: 90px;
+    height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu a {
+    white-space: nowrap;
+
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  margin: 0 1vw;
+  font-size: 1vw;
+}
+
+.menu a:hover {
+    color: #2f5f3a;
+    border-bottom: 2px solid #2f5f3a;
+
+}
+/*Img de decoração do header*/
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.inicio img {
+    width: 18px;
+    height: 18px;
+}
+
+.acoes{
+   display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.btn-carrinho img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btn-carrinho:hover img {
+    transform: scale(1.1);
+}
+.hamburguer {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.busca {
+    width: 100%;
+    max-width: 330px;
+    height: 6vh;
+
+
+  display: flex;
+  align-items: center;
+
+  background-color: #EEF1F6;
+  padding: 0 5%;
+  border-radius: 999px;
+}
+
+.busca input {
+    flex: 1;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+
+  color: #2D2D2D;
+}
+.busca input::placeholder {
+    color: #4A4A4A;
+}
+.botao-busca {
+    border: none;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.botao-busca img {
+    width: 2vw;
+    max-width: 28px;
+    min-width: 18px;
+    margin-right: 1vw;
+
+    height: 28px;
+    object-fit: contain;
+}
+.hamburguer {
+  font-size: 2vw;
+  cursor: pointer;
+}
+/*Banner inicial da pagina */
+.quem-somos {
+  width: 100%;
+  background-color: #f6f3e8;
+  display: grid;
+  grid-template-columns: 58% 42%;
+  padding: 55px 6% 35px 6%;
+  box-sizing: border-box;
+}
+
+.texto-quem-somos {
+  padding-top: 25px;
+}
+
+.frase-topo {
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #244642;
+  margin-bottom: 18px;
+}
+
+.texto-quem-somos h1 {
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 68px;
+  font-weight: 400;
+  color: #244642;
+  margin: 0 0 35px 0;
+  line-height: 1;
+}
+
+.texto-quem-somos p {
+  font-family: "Almarai", sans-serif;
+  font-size: 17px;
+  line-height: 1.35;
+  color: #244642;
+  width: 430px;
+  margin-bottom: 22px;
+  font-weight: 700;
+}
+
+.imagem-quem-somos {
+  display: grid;
+  justify-content: end;
+  align-items: start;
+}
+
+.imagem-quem-somos img {
+  width: 440px;
+  height: 390px;
+  object-fit: cover;
+  display: block;
+}
+/* Nosso processo*/
+
+.processo {
+    width: 100%;
+    background-color: white;
+    padding: 20px 6% 70px;
+    box-sizing: border-box;
+}
+
+.titulo-processo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-processo h2 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #244642;
+    margin-bottom: 5px;
+}
+
+.titulo-processo p {
+    font-family: "Almarai", sans-serif;
+    font-size: 16px;
+    color: #244642;
+    font-weight: 400;
+}
+
+/* ETAPAS */
+
+.etapas-processo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    column-gap: 20px;
+}
+
+/* Linha atrás das bolinhas */
+
+.etapas-processo::before {
+    content: "";
+    position: absolute;
+    width: 88%;
+    height: 2px;
+    background-color: #CDBB80;
+    top: 40px;
+    left: 6%;
+    z-index: 0;
+}
+
+.etapa {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.numero {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+    background-color: #4D6C68;
+    color: white;
+
+    display: grid;
+    place-items: center;
+
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 32px;
+    font-weight: 400;
+
+    position: relative;
+    z-index: 3;
+}
+
+.etapa h3 {
+    font-family: "Almarai", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #244642;
+    margin-bottom: 12px;
+}
+
+.etapa p {
+    width: 145px;
+    margin: auto;
+
+    font-family: "Almarai", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #244642;
+}
+/*footer */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+}
+
+.rodape{
+    background:#B6B96A;
+    padding:40px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+}
+
+/* LOGO */
+
+.footer-logo{
+    width:280px;
+}
+
+.logo-rv{
+    width:50px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.footer-logo p{
+    color:#2f5f3a;
+    font-family: "Bodoni Moda SC" ,serif;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.redes-sociais{
+    display:flex;
+    gap:18px;
+}
+
+.redes-sociais img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+    cursor:pointer;
+}
+
+/* COLUNAS */
+
+.footer-coluna a,
+.footer-newsletter p,
+.contato span,
+.footer-newsletter button {
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+}
+
+.footer-coluna h3,
+.footer-newsletter h3 {
+    font-family: "Almarai", sans-serif;
+    font-size: 15px;
+}
+
+.footer-coluna{
+    display:flex;
+    flex-direction:column;
+    min-width:160px;
+}
+
+.footer-coluna h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.footer-coluna a{
+    text-decoration:none;
+    color:#4F5E55;
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.footer-coluna a:hover{
+    text-decoration:underline;
+}
+
+/* CONTATO */
+
+.contato{
+    margin-top:10px;
+}
+
+.contato-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.contato-item img{
+    width:18px;
+    height:18px;
+}
+
+.contato-item span{
+    font-size:14px;
+    color:#4F5E55;
+}
+
+/* NEWSLETTER */
+
+.footer-newsletter{
+    width:250px;
+}
+
+.footer-newsletter h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.footer-newsletter p{
+    color:#4F5E55;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.footer-newsletter input{
+    width:100%;
+    padding:12px;
+    border:1px solid #D7D7D7;
+    border-radius:25px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+.footer-newsletter button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#6E9182;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.footer-newsletter button:hover{
+    background:#5D7F71;
+}
+
+

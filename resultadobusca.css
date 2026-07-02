@@ -1,0 +1,567 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  width: 100%;
+
+  padding: 2vh 4%;
+  box-sizing: border-box;
+  background-color: #f4f5ee;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  font-size: 60px;
+  color: #2f5f3a;
+  font-family: serif;
+}
+.logo img {
+    width: 70%;
+    max-width: 90px;
+    height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu a {
+    white-space: nowrap;
+
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  margin: 0 1vw;
+  font-size: 1vw;
+}
+
+.menu a:hover {
+    color: #2f5f3a;
+    border-bottom: 2px solid #2f5f3a;
+
+}
+/*Img de decoração do header*/
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.inicio img {
+    width: 18px;
+    height: 18px;
+}
+
+.acoes{
+   display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.btn-carrinho img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btn-carrinho:hover img {
+    transform: scale(1.1);
+}
+.hamburguer {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.busca {
+    width: 100%;
+    max-width: 330px;
+    height: 6vh;
+
+
+  display: flex;
+  align-items: center;
+
+  background-color: #EEF1F6;
+  padding: 0 5%;
+  border-radius: 999px;
+}
+
+.busca input {
+    flex: 1;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+
+  color: #2D2D2D;
+}
+.busca input::placeholder {
+    color: #4A4A4A;
+}
+.botao-busca {
+    border: none;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.botao-busca img {
+    width: 2vw;
+    max-width: 28px;
+    min-width: 18px;
+    margin-right: 1vw;
+
+    height: 28px;
+    object-fit: contain;
+}
+.hamburguer {
+  font-size: 2vw;
+  cursor: pointer;
+}
+/* Produtos */
+.pagina-produtos {
+  width: 100%;
+  background-color: #f6f3e8;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  padding: 35px 6% 60px;
+  box-sizing: border-box;
+  gap: 45px;
+}
+
+/* FILTROS */
+
+.filtros {
+  border: 1px solid #244642;
+  padding: 30px 24px;
+  color: #244642;
+  height: fit-content;
+}
+
+.topo-filtros {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-bottom: 1px solid #9b9b8f;
+  padding-bottom: 18px;
+}
+
+.topo-filtros h2 {
+  font-family: "Almarai", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.topo-filtros a {
+  font-family: "Almarai", sans-serif;
+  color: #244642;
+  font-size: 15px;
+}
+
+.grupo-filtro {
+  padding: 22px 0;
+  border-bottom: 1px solid #c8c5b7;
+}
+
+.grupo-filtro h3 {
+  font-family: "Almarai", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+
+.grupo-filtro label {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  align-items: center;
+  font-family: "Almarai", sans-serif;
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+
+.grupo-filtro label span {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #d2d2c6;
+  border-radius: 7px;
+  display: block;
+}
+
+.cores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 12px;
+}
+
+.cores p {
+  font-family: "Almarai", sans-serif;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  margin: 0;
+}
+
+.cor {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: block;
+}
+
+.black {
+  background-color: #1e2730;
+}
+
+.blue {
+  background-color: #19c4d2;
+}
+
+.brown {
+  background-color: #b98d84;
+}
+
+.green {
+  background-color: #3f7770;
+}
+
+.ver-mais {
+  display: inline-block;
+  margin-top: 20px;
+  font-family: "Almarai", sans-serif;
+  color: #244642;
+  font-size: 16px;
+}
+
+.preco {
+  padding-top: 22px;
+}
+
+.valores {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-family: "Almarai", sans-serif;
+  font-size: 14px;
+  color: #244642;
+}
+
+.linha-preco {
+  height: 2px;
+  background-color: #9b9b8f;
+  margin: 18px 0 25px;
+  position: relative;
+}
+
+.linha-preco span {
+  width: 18px;
+  height: 18px;
+  background-color: #3f7770;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+}
+
+.linha-preco span:first-child {
+  left: 0;
+}
+
+.linha-preco span:last-child {
+  right: 0;
+}
+
+.preco button {
+  width: 100%;
+  height: 34px;
+  background-color: #3f7770;
+  color: #f6f3e8;
+  border: none;
+  border-radius: 12px;
+  font-family: "Almarai", sans-serif;
+  font-size: 14px;
+}
+
+/* PRODUTOS */
+
+.area-produtos {
+  width: 100%;
+}
+
+.topo-produtos {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.topo-produtos h1 {
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #244642;
+  margin: 0;
+}
+
+.topo-produtos button {
+  width: 130px;
+  height: 22px;
+  border: none;
+  border-radius: 12px;
+  background-color: #9b9b8f;
+  color: #244642;
+  font-family: "Almarai", sans-serif;
+  font-size: 11px;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+  row-gap: 85px;
+}
+
+.produto {
+  color: #244642;
+}
+
+.produto img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.produto h2 {
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.produto p,
+.produto strong {
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #244642;
+  display: block;
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* PAGINAÇÃO */
+
+.paginacao {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 32px) 60px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.paginacao button {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid #244642;
+  color: #244642;
+  font-family: "Almarai", sans-serif;
+  font-size: 15px;
+}
+
+.paginacao .ativo {
+  background-color: #244642;
+  color: #f6f3e8;
+}
+
+.paginacao span {
+  height: 1px;
+  background-color: #244642;
+  display: block;
+}
+/*footer */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+}
+
+.rodape{
+    background:#B6B96A;
+    padding:40px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+}
+
+/* LOGO */
+
+.footer-logo{
+    width:280px;
+}
+
+.logo-rv{
+    width:50px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.footer-logo p{
+    color:#2f5f3a;
+    font-family: "Bodoni Moda SC" ,serif;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.redes-sociais{
+    display:flex;
+    gap:18px;
+}
+
+.redes-sociais img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+    cursor:pointer;
+}
+
+/* COLUNAS */
+
+.footer-coluna a,
+.footer-newsletter p,
+.contato span,
+.footer-newsletter button {
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+}
+
+.footer-coluna h3,
+.footer-newsletter h3 {
+    font-family: "Almarai", sans-serif;
+    font-size: 15px;
+}
+
+.footer-coluna{
+    display:flex;
+    flex-direction:column;
+    min-width:160px;
+}
+
+.footer-coluna h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.footer-coluna a{
+    text-decoration:none;
+    color:#4F5E55;
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.footer-coluna a:hover{
+    text-decoration:underline;
+}
+
+/* CONTATO */
+
+.contato{
+    margin-top:10px;
+}
+
+.contato-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.contato-item img{
+    width:18px;
+    height:18px;
+}
+
+.contato-item span{
+    font-size:14px;
+    color:#4F5E55;
+}
+
+/* NEWSLETTER */
+
+.footer-newsletter{
+    width:250px;
+}
+
+.footer-newsletter h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.footer-newsletter p{
+    color:#4F5E55;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.footer-newsletter input{
+    width:100%;
+    padding:12px;
+    border:1px solid #D7D7D7;
+    border-radius:25px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+.footer-newsletter button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#6E9182;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.footer-newsletter button:hover{
+    background:#5D7F71;
+}
+
+

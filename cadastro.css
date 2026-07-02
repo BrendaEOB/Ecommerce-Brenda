@@ -1,0 +1,472 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  width: 100%;
+
+  padding: 2vh 4%;
+  box-sizing: border-box;
+  background-color: #f4f5ee;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  font-size: 60px;
+  color: #2f5f3a;
+  font-family: serif;
+}
+.logo img {
+    width: 70%;
+    max-width: 90px;
+    height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu a {
+    white-space: nowrap;
+
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  margin: 0 1vw;
+  font-size: 1vw;
+}
+
+.menu a:hover {
+    color: #2f5f3a;
+    border-bottom: 2px solid #2f5f3a;
+
+}
+/*Img de decoração do header*/
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.inicio img {
+    width: 18px;
+    height: 18px;
+}
+
+.acoes{
+   display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.btn-carrinho img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btn-carrinho:hover img {
+    transform: scale(1.1);
+}
+.hamburguer {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.busca {
+    width: 100%;
+    max-width: 330px;
+    height: 6vh;
+
+
+  display: flex;
+  align-items: center;
+
+  background-color: #EEF1F6;
+  padding: 0 5%;
+  border-radius: 999px;
+}
+
+.busca input {
+    flex: 1;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+
+  color: #2D2D2D;
+}
+.busca input::placeholder {
+    color: #4A4A4A;
+}
+.botao-busca {
+    border: none;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.botao-busca img {
+    width: 2vw;
+    max-width: 28px;
+    min-width: 18px;
+    margin-right: 1vw;
+
+    height: 28px;
+    object-fit: contain;
+}
+.hamburguer {
+  font-size: 2vw;
+  cursor: pointer;
+}
+.pagina-cadastro {
+    width: 100%;
+    min-height: 760px;
+    background-image: url("imagens/img\ pagina\ de\ cadastro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: 48% 52%;
+    padding: 30px 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* lado esquerdo */
+
+.lado-cadastro {
+    padding-top: 10px;
+    color: #1d1d1d;
+}
+
+.boas-vindas {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    line-height: 0.9;
+    margin-bottom: 30px;
+}
+
+.lado-cadastro h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.texto-cadastro {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.beneficios-cadastro {
+    display: grid;
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.beneficio-cadastro {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.beneficio-cadastro img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.beneficio-cadastro h3 {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.beneficio-cadastro p {
+    font-size: 10px;
+}
+
+/* formulário */
+
+.area-formulario-cadastro {
+    display: grid;
+    justify-items: center;
+    align-items: start;
+}
+
+.formulario-cadastro {
+    width: 430px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 18px 20px 22px;
+}
+
+.formulario-cadastro h2 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+.linha-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.campo {
+    margin-bottom: 12px;
+}
+
+.campo label {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    height: 26px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 0 8px;
+    font-size: 10px;
+    background-color: white;
+    outline: none;
+}
+
+.campo input::placeholder {
+    color: #b7b7b7;
+}
+
+.pequeno button {
+    width: 100%;
+    height: 26px;
+    background-color: #e8d9b8;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.termos {
+    display: grid;
+    grid-template-columns: 14px 1fr;
+    gap: 6px;
+    align-items: center;
+    font-size: 9px;
+    margin: 5px 0 12px;
+}
+
+.termos input {
+    width: 12px;
+    height: 12px;
+}
+
+.botao-criar {
+    width: 100%;
+    height: 28px;
+    background-color: #3c7548;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-family: Georgia, serif;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.login {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 12px;
+}
+
+.login a {
+    color: #3c7548;
+    text-decoration: underline;
+}
+/*footer */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+}
+
+.rodape{
+    background:#B6B96A;
+    padding:40px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+}
+
+/* LOGO */
+
+.footer-logo{
+    width:280px;
+}
+
+.logo-rv{
+    width:50px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.footer-logo p{
+    color:#2f5f3a;
+    font-family: "Bodoni Moda SC" ,serif;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.redes-sociais{
+    display:flex;
+    gap:18px;
+}
+
+.redes-sociais img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+    cursor:pointer;
+}
+
+/* COLUNAS */
+
+.footer-coluna a,
+.footer-newsletter p,
+.contato span,
+.footer-newsletter button {
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+}
+
+.footer-coluna h3,
+.footer-newsletter h3 {
+    font-family: "Almarai", sans-serif;
+    font-size: 15px;
+}
+
+.footer-coluna{
+    display:flex;
+    flex-direction:column;
+    min-width:160px;
+}
+
+.footer-coluna h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.footer-coluna a{
+    text-decoration:none;
+    color:#4F5E55;
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.footer-coluna a:hover{
+    text-decoration:underline;
+}
+
+/* CONTATO */
+
+.contato{
+    margin-top:10px;
+}
+
+.contato-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.contato-item img{
+    width:18px;
+    height:18px;
+}
+
+.contato-item span{
+    font-size:14px;
+    color:#4F5E55;
+}
+
+/* NEWSLETTER */
+
+.footer-newsletter{
+    width:250px;
+}
+
+.footer-newsletter h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.footer-newsletter p{
+    color:#4F5E55;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.footer-newsletter input{
+    width:100%;
+    padding:12px;
+    border:1px solid #D7D7D7;
+    border-radius:25px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+.footer-newsletter button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#6E9182;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.footer-newsletter button:hover{
+    background:#5D7F71;
+}
+
+

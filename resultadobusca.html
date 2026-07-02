@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resultadobusca.css">
+</head>
+<body>
+        <header class="header">
+                 <div class="logo"><img src="imagens/Vector.png" alt="logo Rv">
+                </div>
+
+                <nav class="menu">
+                    <a href="index.html" class="inicio">
+                        <img src="imagens/casinha.png" alt="Home">
+                        Início</a>
+                    <a href="produtos.html">Produtos</a>
+                    <a href="contato.html">Contato</a>
+                    <a href="cadastro.html">Cadastro</a>
+                    <a href="pedidos.html">Pedidos</a>  
+                    <a href="quemSomos.html">Quem Somos</a>
+
+                </nav>
+
+                <div class="acoes">
+                    <form class="busca" action="#" method="get"> 
+                        <input type="text" 
+                        name="q"
+                        placeholder="Buscar produtos...">
+                       <a href="resultadoBusca.html" class="botao-pesquisa">
+                            <img src="imagens/lupa.png" alt="Pesquisar">
+                        </a>
+                    </form> 
+                    <a href="pedidos.html" class="btn-carrinho">
+                     <img src="imagens/Shopping cart.png" alt="carrinho">
+                   </a>
+                    <div class="hamburguer">☰</div>
+                </div>
+
+        </header>
+        <main class="pagina-produtos">
+
+            <aside class="filtros">
+                <div class="topo-filtros">
+                    <h2>FILTROS</h2>
+                    <a href="#">Limpar todos</a>
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <h3>CATEGORIA</h3>
+
+                        <label><span></span>Blusas</label>
+                        <label><span></span>Calçados</label>
+                        <label><span></span>Relógios</label>
+                        <label><span></span>Acessórios</label>
+                        <label><span></span>Casacos</label>
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <h3>CONDIÇÃO</h3>
+
+                        <label><span></span>Excelente (400)</label>
+                        <label><span></span>Muito Bom (213)</label>
+                        <label><span></span>Bom (42)</label>
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <h3>COR</h3>
+
+                        <div class="cores">
+                            <p><span class="cor black"></span>Black</p>
+                            <p><span class="cor blue"></span>Blue</p>
+                            <p><span class="cor brown"></span>Brown</p>
+                            <p><span class="cor green"></span>Green</p>
+                    </div>
+
+                <a class="ver-mais" href="#">Ver mais</a>
+                </div>
+
+                    <div class="preco">
+                        <div class="valores">
+                            <p>R$200</p>
+                            <p>R$20.000+</p>
+                    </div>
+
+      <div class="linha-preco">
+        <span></span>
+        <span></span>
+      </div>
+
+      <button>Aplicar Filtros</button>
+    </div>
+  </aside>
+
+  <section class="area-produtos">
+    <div class="topo-produtos">
+      <h1>360 RESULTADOS ENCONTRADOS</h1>
+      <button>Ordenar por</button>
+    </div>
+
+    <div class="grid-produtos">
+
+      <div class="produto">
+        <img src="imagens/courreges.webp" alt="Jaqueta azul Courrèges">
+        <h2>Courrèges</h2>
+        <p>Jaqueta com abotoamento</p>
+        <strong>R$ 7.480</strong>
+        <p>12 x R$ 623,33</p>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/Ganni.webp" alt="Cardigan Ganni">
+        <h2>Ganni</h2>
+        <p>Cardigan de tricô com botões</p>
+        <strong>R$ 2.198</strong>
+        <p>12 x R$ 183,17</p>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/givenchy.webp" alt="Camisa Givenchy">
+        <h2>Givenchy</h2>
+        <p>Camisa polo cropped com mangas curtas</p>
+        <strong>R$ 10.046</strong>
+        <p>12 x R$ 837,17</p>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/zimmermman.png" alt="Vestido Zimmermann">
+        <h2>Zimmermann</h2>
+        <p>Vestido midi Sunray com pregas</p>
+        <strong>R$ 6.396</strong>
+        <p>12 x R$ 533,08</p>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/blumarine.webp" alt="Vestido Blumarine">
+        <h2>Blumarine</h2>
+        <p>Vestido de festa com babados</p>
+        <strong>R$ 11.483</strong>
+        <p>12 x R$ 956,92</p>
+      </div>
+
+      <div class="produto">
+        <img src="imagens/maria lucia.webp" alt="Vestido Maria Lucia Hohan">
+        <h2>Maria Lucia Hohan</h2>
+        <p>Vestido Yarina assimétrico com babados</p>
+        <strong>R$ 11.252</strong>
+        <p>12 x R$ 937,67</p>
+      </div>
+
+    </div>
+
+    <div class="paginacao">
+      <button class="ativo">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <span></span>
+      <button>12</button>
+    </div>
+  </section>
+
+</main>
+         <footer class="rodape">
+
+        <div class="footer-container">
+
+                <!-- LOGO -->
+                    <div class="footer-logo">
+
+                        <img src="imagens/Vector.png" alt="Logo RV" class="logo-rv">
+                         <p>
+                            PEÇAS AUTÊNTICAS DAS MARCAS MAIS DESEJADAS,
+                            COMPRADAS DE FORMA EXCLUSIVA E COM UM
+                            CONSUMO CONSCIENTE.
+                        </p>
+                        <div class="redes-sociais">
+                            <a href="#">
+                                <img src="imagens/Instagram.png" alt="Instagram">
+                            </a>
+                            <a href="#">
+                                <img src="imagens/Group 10.png" alt="Facebook">
+                            </a>
+                            <a href="#">
+                                <img src="imagens/Group 9.png" alt="YouTube">
+                            </a>
+                        </div> 
+                    </div>
+        
+                <!-- INSTITUCIONAL -->
+                    <div class="footer-coluna">
+                        <h3>INSTITUCIONAL</h3>
+                        <a href="quemSomos.html">Quem Somos</a>
+                        <a href="#">Nossa Curadoria</a>
+                        <a href="#">Sustentabilidade</a>
+                        <a href="#">Perguntas Frequentes</a>
+                    </div>
+                <!-- AJUDA -->
+                    <div class="footer-coluna">
+                        <h3>AJUDA</h3>
+                        <a href="#">Como Comprar</a>
+                        <a href="#">Formas de Pagamento</a>
+                        <a href="#">Trocas e Devoluções</a>
+                        <a href="#">Política de Privacidade</a>
+                    </div>
+                <!-- ATENDIMENTO -->
+                    <div class="footer-coluna">
+                        <h3>ATENDIMENTO</h3>
+                        <a href="contato.html">Contato</a>
+                        <a href="#">Central de Ajuda</a>
+                        <div class="contato">
+    
+                            <div class="contato-item">
+                             <img src="imagens/Phone.png" alt="Telefone">
+                                <span>(11) 99999-9999</span>
+                            </div>
+                            <div class="contato-item">
+                                <img src="imagens/mark_email_unread.png" alt="E-mail">
+                                <span>contato@rv.com.br</span>
+                            </div>    
+                        </div>
+                    </div>    
+          
+                     <!-- NEWSLETTER -->
+                        <div class="footer-newsletter">
+                         <h3>NEWSLETTER</h3>
+                            <p>
+                             Receba novidades e ofertas exclusivas.
+                             </p>
+                            <input type="email" placeholder="Digite seu e-mail">
+                             <button>Inscrever-se</button>
+                        </div>
+        </div>
+        </footer>
+</body>
+</html>

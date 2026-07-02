@@ -1,0 +1,553 @@
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  width: 100%;
+
+  padding: 2vh 4%;
+  box-sizing: border-box;
+  background-color: #f4f5ee;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  font-size: 60px;
+  color: #2f5f3a;
+  font-family: serif;
+}
+.logo img {
+    width: 70%;
+    max-width: 90px;
+    height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.menu a {
+    white-space: nowrap;
+
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+
+  margin: 0 1vw;
+  font-size: 1vw;
+}
+
+.menu a:hover {
+    color: #2f5f3a;
+    border-bottom: 2px solid #2f5f3a;
+
+}
+/*Img de decoração do header*/
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.inicio img {
+    width: 18px;
+    height: 18px;
+}
+
+.acoes{
+   display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn-carrinho {
+    display: flex;
+    align-items: center;
+}
+
+.btn-carrinho img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.btn-carrinho:hover img {
+    transform: scale(1.1);
+}
+.hamburguer {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.busca {
+    width: 100%;
+    max-width: 330px;
+    height: 6vh;
+
+
+  display: flex;
+  align-items: center;
+
+  background-color: #EEF1F6;
+  padding: 0 5%;
+  border-radius: 999px;
+}
+
+.busca input {
+    flex: 1;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+
+  color: #2D2D2D;
+}
+.busca input::placeholder {
+    color: #4A4A4A;
+}
+.botao-busca {
+    border: none;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.botao-busca img {
+    width: 2vw;
+    max-width: 28px;
+    min-width: 18px;
+    margin-right: 1vw;
+
+    height: 28px;
+    object-fit: contain;
+}
+.hamburguer {
+  font-size: 2vw;
+  cursor: pointer;
+}
+/*bolsa de luxo e inicio do corpo do site*/
+.hero-luxo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #f7f3e8;
+    padding: 20px 80px 60px;
+    gap: 40px;
+}
+
+.hero-texto {
+    width: 50%;
+}
+
+.hero-subtitulo {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 16px;
+    color: #1f3f3a;
+    letter-spacing: 2px;
+    color: #1f3f3a;
+    margin: 0 0 10px;
+}
+.hero-linha {
+    width: 180px;
+    height: 2px;
+    background-color: #B6B96A;
+    margin: 0 0 18px;
+}
+
+.hero-texto h1 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 96px;
+    line-height: 0.9;
+    color: #1f3f3a;
+    margin-bottom: 0 0 18px;
+}
+
+.hero-descricao { 
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 16px;
+    color: #1f3f3a;
+    max-width: 420px;
+    margin-bottom: 25px;
+}
+
+.botao-produtos {
+    display: inline-block;
+    background-color: #315f4c;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.hero-imagem {
+    width: 50%;
+}
+
+.hero-imagem img {
+    width: 100%;
+    max-width: 430px;
+    object-fit: cover;
+    display: block;
+}
+
+.selos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    gap: 30px;
+    background-color: #F3F2E2;
+    padding: 50px 80px;
+}
+.selo {
+    text-align: center;
+    padding: 0 30px;
+    position: relative;
+}  
+
+.selo:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 1px;
+    height: 70%;
+    background-color: #D6D1BE;
+
+}
+.selo img {
+    width: 42px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.selo h3 {
+    font-family: "Almarai", sans-serif;
+    font-size: 15px;
+    color: #1f3f3a;
+    margin-bottom: 12px;
+}
+
+.selo p {
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+    color: #1f3f3a;
+    line-height: 1.4;
+}
+
+/*corpo do site*/ 
+.pecas-selecionadas {
+    background-color: #f7f3e8;
+    text-align: center;
+    padding: 50px 0;
+}
+.pecas-container {
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 45px 45px 50px;
+    box-sizing: border-box;
+}
+.pecas-container h2 {
+    font-family: "Abhaya Libre", serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1f3f3a;
+    margin-bottom: 4px;
+}
+.pecas-container h3{
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #1f3f3a;
+    margin: 5px 0 10px;
+
+}
+.pecas-selecionadas h2 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 42px;
+    line-height: 1.1;
+    color: #1f3f3a;
+    margin-bottom: 12px;
+}
+.linha-dourada {
+    width: 220px;
+    height: 1px;
+    background-color: #B6B96A;
+    margin: 14px auto 18px auto;
+}
+
+.subtitulo-pecas {
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+    color: #1f3f3a;
+    margin-bottom: 35px;
+}
+
+.produtos-destaque {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.produto-card {
+    position: relative;
+    min-height: 360px;
+    text-align: center;
+}
+
+.produto-card img {
+    width: 100%;
+    max-width: 230px;
+    height: 230px;
+    object-fit: contain;
+}
+
+.produto-card h3 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 18px;
+    color: #1f3f3a;
+    margin-top: 16px;
+}
+.produto-card h4 {
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 16px;
+    color: #1f3f3a;
+    margin: 8px 0 4px;
+}
+
+.produto-card p {
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+    color: #1f3f3a;
+}
+
+.produto-card strong {
+    font-family: "Abhaya Libre", serif;
+    font-size: 16px;
+    color: #1f3f3a;
+}
+
+.imagem-produto {
+    width: 100%;
+    max-width: 180px;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+    margin: 25px auto 12px;
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    background-color: #315f4c;
+    color: white;
+    font-family: "Abhaya Libre", serif;
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+.desconto {
+    background-color: #B6B96A;
+    color: #1f3f3a;
+}
+
+.favorito {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1f3f3a;
+}
+
+.ver-todos {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 28px;
+    border: 1px solid #1f3f3a;
+    color: #1f3f3a;
+    text-decoration: none;
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+}
+
+
+/*footer */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, serif;
+}
+
+.rodape{
+    background:#B6B96A;
+    padding:40px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+}
+
+/* LOGO */
+
+.footer-logo{
+    width:280px;
+}
+
+.logo-rv{
+    width:50px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: -5px;
+}
+
+.footer-logo p{
+    color:#2f5f3a;
+    font-family: "Bodoni Moda SC" ,serif;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.redes-sociais{
+    display:flex;
+    gap:18px;
+}
+
+.redes-sociais img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+    cursor:pointer;
+}
+
+/* COLUNAS */
+
+.footer-coluna a,
+.footer-newsletter p,
+.contato span,
+.footer-newsletter button {
+    font-family: "Abhaya Libre", serif;
+    font-size: 15px;
+}
+
+.footer-coluna h3,
+.footer-newsletter h3 {
+    font-family: "Almarai", sans-serif;
+    font-size: 15px;
+}
+
+.footer-coluna{
+    display:flex;
+    flex-direction:column;
+    min-width:160px;
+}
+
+.footer-coluna h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:600;
+}
+
+.footer-coluna a{
+    text-decoration:none;
+    color:#4F5E55;
+    margin-bottom:12px;
+    font-size:15px;
+}
+
+.footer-coluna a:hover{
+    text-decoration:underline;
+}
+
+/* CONTATO */
+
+.contato{
+    margin-top:10px;
+}
+
+.contato-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.contato-item img{
+    width:18px;
+    height:18px;
+}
+
+.contato-item span{
+    font-size:14px;
+    color:#4F5E55;
+}
+
+/* NEWSLETTER */
+
+.footer-newsletter{
+    width:250px;
+}
+
+.footer-newsletter h3{
+    color:#3D534A;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.footer-newsletter p{
+    color:#4F5E55;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.footer-newsletter input{
+    width:100%;
+    padding:12px;
+    border:1px solid #D7D7D7;
+    border-radius:25px;
+    margin-bottom:15px;
+    outline:none;
+}
+
+.footer-newsletter button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background:#6E9182;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.footer-newsletter button:hover{
+    background:#5D7F71;
+}
+
+
